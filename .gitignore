@@ -1,0 +1,14 @@
+# Jetbrains
+.idea/
+*.iml
+target/
+
+
+# Produced files
+*.csv
+
+# Excel
+*.xlsx
+
+# Emacs
+*~
