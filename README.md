@@ -10,6 +10,26 @@ The CsvGetter class is used in exactly the same way in the unit test and in the 
 Without a module-info.java file, the main() method and the unit test behave in the same way.
 With a module-info file, the CsvGetter.get() method crashes when called from Main.main().
 
+## module-info.java file
+
+```java
+module opencsvDemo {
+    requires opencsv;
+    opens demo;
+}
+```
+
+Location: opencsvDemo/src/main/java/module-info.java. 
+
+## pom.xml
+```xml
+<dependency>
+    <groupId>com.opencsv</groupId>
+    <artifactId>opencsv</artifactId>
+    <version>5.2</version>
+</dependency>
+```
+
 ## Running this version: 
 Set up the project structure so that both Project SDK and Project language level are Java 14.
 
